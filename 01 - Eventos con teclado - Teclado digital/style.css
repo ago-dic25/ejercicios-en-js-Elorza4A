@@ -1,0 +1,53 @@
+:root{
+    --main-color: #000080;
+    --second-color: #008000;
+    --magenta-color: #800080;
+    --green-light: #90EE90;
+}
+
+body {
+    text-align: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+.keys{
+    margin: 10% 0;
+}
+
+.key{
+    border: 2px solid white;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.key:hover{
+    background-color: var(--magenta-color);
+}
+
+.key div{
+    display: flex;
+    flex-direction: column;
+}
+
+.save button{
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.save button:hover{
+    background-color: var(--green-light);
+}
