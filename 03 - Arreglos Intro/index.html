@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arreglos intro</title>
+
+    <style>
+
+        ul{
+            list-style: none;
+        }
+
+        #filtroAlumno{
+            font-size: 20px;
+            border-radius: 15px;
+            padding: 5px;
+            width: 270px;
+        }
+
+        #btnConsulta{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        html{
+            font-size: 22px;
+            background-color: #000020;
+        }
+
+        h1{
+            color: white;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .contenedor{
+            margin: 0 auto;
+            width: 500px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="contenedor">
+        <h1>Lista de alumnos</h1>
+
+        <input type="text" id="filtroAlumno" placeholder="Escribe el nombre del alumno">
+        <button id="btnConsulta">Realizar Consulta</button>
+        <div class="resultado">
+            <ul id="listaAlumnos">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
